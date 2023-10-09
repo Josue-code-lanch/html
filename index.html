@@ -1,100 +1,92 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Mi primera pagina</title>
-    </head>
-    <body>
-        <h1>Titulo 1</h1>
-        <h2>Titulo 2</h2>
-        <h3>Titulo 3</h3>
-        <h4>Titulo 4</h4>
-        <h5>Titulo 5</h5>
-        <h6>Titulo 6</h6>
-        <br />
-    <p>Parrafo</p>
-    <br />
-    <b>Letra Negrita</b>
-    <br />
-    <blockquote>Fuente de codigo</blockquote>
-    <br />
-    <em>Agrega cursiva</em>
-    <br />
-    <pre>Texto preformateado</pre>
-    <br />
-    <s>Texto tachado</s>
-    <br />
-    <small>Texto chiquito</small>
-    <br />
-    <strong>Otro texto en negrita</strong>
-    <br />
-    <u>Tetxo subrayado</u>
-    <br />
-    
-        <form>
-            <fieldset>
-                <legend>Datos personales</legend>
-            <label>Edad</label>
-            <input type="number" placeholder="Ingrese edad...">
-            <br />
-            <label>Clave</label>
-            <input type="password" placeholder="Ingrese clave...">
-            <br />
-            <label>Nombre</label>
-            <input type="text" placeholder="Ingrese nombre...">
-            <br />
-            <input type="submit">
-            <br />
-            <br />
-            <textarea></textarea>
-            <button>Aceptar</button>
-            <select>
-                <option value="goku">Goku</option>
-                <option value="vegeta">Vegeta</option>
-                <option value="gohan">Gohan</option>
-            </fieldset>    
-            </select>
-        </form>
-    <br />
-    <img src="http://placekitten.com/200/200"/>
-        <a href="https://www.google.com">Ir a Google</a>
-
-    <br />
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chanchito feliz</td>
+                <td>$19,99</td>
+            </tr>
+            <tr>
+                <td>Chanchito muy feliz</td>
+                <td>$29,99</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total $49,98</td>
+        </tfoot>
+    </table>
+    <!-- ul es lista no ordenada -->
     <ul>
         <li>Elemento 1</li>
         <li>Elemento 2</li>
         <li>Elemento 3</li>
     </ul>
-    <br />
+    <!--ol es lista ordenada-->
     <ol>
         <li>Elemento 1</li>
         <li>Elemento 2</li>
         <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Sub elemento 1</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Sub elemento 3</li>
+            </ol>
+        </li>
     </ol>
-    <br />
-    <table>
-        <thead>
-            <tr>
-               <th>Mes</th> 
-               <th>Ahorros</th> 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Enero</td>
-                <td>$1000</td>
-            </tr>
-            <tr>
-                <td>Febrero</td>
-                <td>$500</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td>Suma total:</td>
-                <td>$1500</td>
-            </tr>
-        </tfoot>
-    </table>    
-    </body>
+
+
+
+
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <p>Chanchito feliz esta muy feliz</p>
+    <p>Chanchito triste esta muy triste</p>
+    <hr>
+    <h2>Chanchito Felipe</h2>
+    <p>Texto un poco mas</p>
+    <!-- este texto es un comentario y no va a aparecer en el explorador
+    -->
+    <p>Este es un texto <span style="color:blue">mucho mas largo</span> y es para mostrar <br>
+         la etiqueta de span!</p>
+    <a target="_blank" href="https://www.google.com">Ir a Google</a> <br>
+    <img src="http://placekitten.com/200/300" height="100" width="100"/>
+    <hr>
+    <form action="/formulario" method="post">
+        <label for="nombre">Nombre</label>
+        <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Ej:Luis"/>
+        <br/>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" type="text" id="apellido" name="apellido" placeholder="Ingrese apellido..."
+        <br></br> 
+        <label for="comentario">Comentario</label>
+        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese comentario...">Este es un valor por defecto</textarea>
+        <br>
+        <button>Enviar</button>
+    </form>
+</body>
 </html>
